@@ -9,7 +9,6 @@ const HomeEventFirst = ({item, index}) => {
   const ref = useRef()
   const isInView = useOnScreen(ref)
 
-  console.log(isInView, 'isIN')
 
   return (
     <div ref={ref} className='home-event_wrap'>

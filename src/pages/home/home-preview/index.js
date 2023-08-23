@@ -6,6 +6,7 @@ import {Animated} from "react-animated-css";
 
 const HomePreview = () => {
 
+
   return (
     <>
       <div className="home-preview">

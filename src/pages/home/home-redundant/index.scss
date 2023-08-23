@@ -17,7 +17,7 @@
 
   &_content {
     & {
-      @apply pt-[200px] pb-[300px] pl-[100px] bg-lightblue;
+      @apply pt-[200px] pb-[300px] pl-[100px] bg-lightblue relative;
     }
 
     &_label {
