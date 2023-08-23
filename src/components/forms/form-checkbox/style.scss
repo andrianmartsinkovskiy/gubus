@@ -4,7 +4,9 @@
 
   &_item {
     opacity: 0.3;
-    @apply flex items-start gap-[16px] cursor-pointer
+    display: grid;
+    grid-template-columns: 12px 1fr;
+    @apply items-start gap-[16px] cursor-pointer
   }
 
   &_item-active {
