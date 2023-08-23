@@ -1,12 +1,27 @@
 .button-transparent {
+  & {
+    transition: 0.3s;
+    @apply border-2 border-lightblue font-benzin w-fit text-lightblue
+    uppercase px-[20px] py-[12px] rounded-[8px] text-sm flex items-center gap-x-[8px]
+  }
+
   &_icon {
     & path {
+      transition: 0.3s;
       stroke: #128CFD !important;
     }
 
     transform: translateY(-1px);
   }
 
-  @apply border-2 border-lightblue font-benzin w-fit text-lightblue
-  uppercase px-[20px] py-[12px] rounded-[8px] text-sm flex items-center gap-x-[8px]
+  &:hover {
+    & {
+      box-shadow: rgba(42, 148, 185, 0.4) 0px 8px 24px;
+      @apply bg-lightblue text-white
+    }
+
+    & path {
+      stroke: #fff !important;
+    }
+  }
 }

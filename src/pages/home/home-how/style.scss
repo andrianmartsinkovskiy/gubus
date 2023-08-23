@@ -13,7 +13,7 @@
 
     &_left  {
       background: white;
-      width: 100px;
+      width: 99px;
       height: 100px;
       position: absolute;
       z-index: 50;
@@ -22,7 +22,7 @@
 
 
       & > div {
-        width: 104px;
+        width: 103px;
         height: 104px;
         background: #128CFD;
         transform: translate(-3px, -4px);
@@ -32,7 +32,7 @@
 
     &_right  {
       background: white;
-      width: 100px;
+      width: 99px;
       height: 100px;
       position: absolute;
       z-index: 50;
@@ -40,7 +40,7 @@
       top: 106px;
 
       & > div {
-        width: 104px;
+        width: 103px;
         height: 104px;
         background: #128CFD;
         border-bottom-left-radius: 50%;

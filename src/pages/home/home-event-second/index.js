@@ -40,28 +40,29 @@ const HomeEventSecond = ({isLast, item, index}) => {
           <div className="home-event-second_content">
             <p className="home-event-second_content_label">Features</p>
 
-            <div className="home-event-second_list">
-                {
-                  item.items.map((label, i) => (
-                    <Animated key={Math.random()} animationIn="fadeInRight" animationOut="fadeOut" animationInDelay={300 * i} isVisible={isInView}>
-                      <div
-                        className={`home-event-second_list_item ${label.id === activeLabel.id && 'home-event-second_list_item-active'}`}
-                        onClick={() => setActiveLabel(label)}>
-                        <div className="home-event-second_list_item-icon">
-                          <img src={label.icon} alt=""/>
+            <Animated animationIn="fadeInRight" animationOut="fadeOut" animationInDelay={300} isVisible={isInView}>
+              <div className="home-event-second_list">
+                  {
+                    item.items.map((label, i) => (
+                        <div
+                          key={Math.random()}
+                          className={`home-event-second_list_item ${label.id === activeLabel.id && 'home-event-second_list_item-active'}`}
+                          onClick={() => setActiveLabel(label)}>
+                          <div className="home-event-second_list_item-icon">
+                            <img src={label.icon} alt=""/>
+                          </div>
+                          <div className="home-event-second_list_item-text">
+                            {
+                              label.text
+                            }
+                          </div>
                         </div>
-                        <div className="home-event-second_list_item-text">
-                          {
-                            label.text
-                          }
-                        </div>
-                      </div>
-                    </Animated>
-                  ))
-                }
-            </div>
+                    ))
+                  }
+              </div>
+            </Animated>
 
-            <Animated animationIn="fadeInRight" animationOut="fadeOut" animationInDelay={1200} isVisible={isInView}>
+            <Animated animationIn="fadeInRight" animationOut="fadeOut" animationInDelay={600} isVisible={isInView}>
               <div className="home-event-second_note">
                 {item.note}
               </div>

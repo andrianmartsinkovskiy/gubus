@@ -1,3 +1,11 @@
 .button-default {
- @apply bg-lightblue font-benzin uppercase px-[20px] py-[12px] text-white rounded-[8px] text-xs
+  & {
+    transition: 0.3s;
+    @apply bg-lightblue font-benzin uppercase px-[20px] py-[12px] text-white rounded-[8px] text-xs
+  }
+
+  &:hover {
+    box-shadow: rgba(42, 148, 185, 0.4) 0px 8px 24px;
+    @apply bg-lightblueHover
+  }
 }

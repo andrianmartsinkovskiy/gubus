@@ -114,6 +114,10 @@
       transform: translateX(20px);
     }
 
+    &_poster-wrap {
+      grid-row: 1;
+    }
+
     &_note {
       width: 100%;
       border-radius: 16px;

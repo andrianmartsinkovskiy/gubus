@@ -16,6 +16,7 @@ module.exports = {
     },
     colors: {
       lightblue: "#128CFD",
+      lightblueHover: "#2a94b9",
       lightgrey: "#E4EAF5",
       grey: "#7D8BA6",
       white: "white",

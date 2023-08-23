@@ -8,6 +8,7 @@ import {Animated} from "react-animated-css";
 const HomeClients = () => {
   const ref = useRef()
   const isInView = useOnScreen(ref)
+  console.log(isInView, 'isInView c')
 
   return (
     <div className="home-clients_section">

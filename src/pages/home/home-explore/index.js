@@ -10,16 +10,14 @@ const HomeExplore = () => {
   const ref = useRef()
   const isInView = useOnScreen(ref)
 
-  console.log(isInView, 'isInView')
-
 
   return (
-    <div ref={ref}  className="home-explore block">
+    <div className="home-explore block">
       <div className='home-explore_line line'>
 
       </div>
       <SectionIcon>
-        <img src={briefcaseImg} alt=""/>
+        <img ref={ref}  src={briefcaseImg} alt=""/>
       </SectionIcon>
 
       <Animated animationIn="lightSpeedIn" animationOut="fadeOut" animationInDelay={0} isVisible={isInView}>
