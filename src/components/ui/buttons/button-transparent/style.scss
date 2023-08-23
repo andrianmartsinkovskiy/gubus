@@ -1,0 +1,8 @@
+.button-with-arrow {
+ &_icon {
+  transform: translateY(-1px);
+ }
+
+ @apply bg-lightblue font-benzin mx-auto
+ uppercase px-[20px] py-[12px] text-white rounded-[8px] text-sm flex items-center gap-x-[8px]
+}
