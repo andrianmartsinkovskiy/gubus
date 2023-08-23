@@ -1,10 +1,7 @@
 .explore-form-step {
-  & {
-    @apply h-[353px] bg-light p-[33px] grid grid-cols-2 gap-x-[88px]
-  }
 
   &_right {
-    @apply flex flex-col justify-end gap-y-[24px]
+    @apply flex-col justify-end gap-y-[24px] flex;
   }
 
   &_left {
@@ -19,22 +16,24 @@
   }
 
   &_submit {
-    @apply flex justify-end
+    @apply flex justify-end;
   }
 
   &_area {
-    &::placeholder {
-      @apply text-grey
+    & {
+      @apply block w-full h-full resize-none p-[15px] rounded-[12px] border-[1px] border-lightgrey font-averta text-lg;
     }
 
-    @apply block w-full h-full resize-none p-[15px] rounded-[12px] border-[1px] border-lightgrey font-averta text-lg
+    &::placeholder {
+      @apply text-grey;
+    }
   }
 }
 
 @media screen  and (max-width: 860px) {
   .explore-form-step {
     & {
-      @apply h-auto bg-light p-[33px] grid grid-cols-1 gap-y-[40px]
+      @apply h-auto bg-light p-[33px] gap-y-[40px] grid grid-cols-1;
     }
 
     &_left {

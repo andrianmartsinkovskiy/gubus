@@ -1,14 +1,14 @@
 .home-explore {
   & {
-    @apply max-w-screen-xl mx-auto pl-[100px] relative pb-[144px]
+    @apply max-w-screen-xl pl-[100px] relative pb-[144px] mx-auto;
   }
 
   &_title {
-    @apply font-benzin text-6xl uppercase
+    @apply font-benzin text-6xl uppercase;
   }
 
   &_subtitle {
-    @apply mt-[5px] font-averta text-lg text-grey mb-[32px]
+    @apply mt-[5px] font-averta text-lg mb-[32px] text-grey;
   }
 
   &_line {
@@ -23,19 +23,19 @@
 
 @media screen and (max-width: 1320px) {
   .home-explore {
-    @apply mt-[70px]
+    @apply mt-[70px] mx-auto;
   }
 }
 
 @media screen and (max-width: 860px) {
   .home-explore {
-    @apply pt-[70px]
+    @apply pt-[70px] mx-auto;
   }
 }
 
 @media screen and (max-width: 600px) {
   .home-explore {
-    @apply pb-[50px]
+    @apply pb-[50px] mx-auto;
   }
 }
 

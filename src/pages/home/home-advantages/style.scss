@@ -8,19 +8,19 @@
   }
 
   &_section {
-    @apply bg-lightblue
+    @apply bg-lightblue;
   }
 
   &_container {
-    @apply max-w-screen-xl mx-auto pt-[150px] pb-[250px] relative pl-[100px]
+    @apply max-w-screen-xl pt-[150px] pb-[250px] relative pl-[100px] mx-auto;
   }
 
   &_title {
-    @apply font-benzin text-6xl uppercase text-white
+    @apply font-benzin text-6xl uppercase text-white;
   }
 
   &_subtitle {
-    @apply text-lg font-averta text-white mb-[32px]
+    @apply text-lg font-averta mb-[32px] text-white;
   }
 
   &_list {
@@ -37,7 +37,7 @@
 
   &_item {
     & {
-      @apply bg-whiteTransparent p-[24px] rounded-[16px] text-white
+      @apply bg-whiteTransparent p-[24px] rounded-[16px] text-white;
     }
 
 
@@ -46,20 +46,21 @@
       grid-template-columns: 70px 1fr;
       align-items: center;
 
-      @apply font-averta text-lg mb-[20px]
+      @apply font-averta mb-[20px] text-lg;
     }
 
     &_icon {
-      @apply bg-white w-[56px] h-[56px] rounded-full flex items-center justify-center border-[1px] border-superLightBlue
+      @apply bg-white w-[56px] h-[56px] rounded-full flex
+      items-center justify-center border-[1px] border-superLightBlue;
     }
 
     &_text {
-      @apply text-sm font-averta
+      @apply text-sm font-averta;
     }
   }
 
   &_item-white {
-    @apply bg-white text-black
+    @apply bg-white text-black;
   }
 
   &_line {
@@ -97,13 +98,13 @@
     }
 
     &_title {
-      @apply text-center
+      @apply text-center;
     }
 
     &_subtitle {
       max-width: 600px;
       margin: 20px auto;
-      @apply text-center
+      @apply text-center;
     }
   }
 }

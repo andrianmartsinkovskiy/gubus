@@ -1,16 +1,16 @@
 .home-pricing {
   &_benefit {
     & {
-      @apply flex items-center gap-x-[10px]
+      @apply flex gap-x-[10px] items-center;
     }
 
     &_icon {
-      @apply w-[16px] h-[16px] flex items-center justify-center bg-lightblue text-white rounded-[4px] text-xs
+      @apply w-[16px] h-[16px] flex items-center justify-center bg-lightblue text-white rounded-[4px] text-xs;
     }
   }
 
   &_wrap {
-    @apply max-w-screen-xl mx-auto pt-[150px] pb-[150px] pl-[100px] relative
+    @apply max-w-screen-xl mx-auto pt-[150px] pb-[150px] pl-[100px] relative;
   }
 
   &_line {
@@ -28,15 +28,15 @@
 
   &_icon {
     @apply absolute w-[72px] h-[72px] bg-lightblue rounded-full left-0
-    -translate-x-1/2 flex items-center justify-center
+    -translate-x-1/2 flex items-center justify-center;
   }
 
   &_title {
-    @apply text-6xl font-benzin
+    @apply text-6xl font-benzin;
   }
 
   &_subtitle {
-    @apply mt-[5px] text-lg font-averta text-grey
+    @apply mt-[5px] text-lg font-averta text-grey;
   }
 
   &_section {
@@ -46,15 +46,16 @@
 
   &_bar {
     & {
-      @apply mt-[38px] mb-[48px] bg-superLightBlue border-[1px] border-lightgrey rounded-[8px] w-fit flex p-[10px] gap-x-[24px]
+      @apply mt-[38px] mb-[48px] bg-superLightBlue border-[1px]
+      border-lightgrey rounded-[8px] flex p-[10px] gap-x-[24px] w-fit;
     }
 
     &_item {
-      @apply px-[32px] py-[8px] rounded-[8px] cursor-pointer
+      @apply px-[32px] py-[8px] rounded-[8px] cursor-pointer;
     }
 
     &_item-active {
-      @apply bg-white
+      @apply bg-white;
     }
   }
 
@@ -67,74 +68,74 @@
 
   &_item {
     & {
-      @apply bg-superLightBlue border-[1px] border-lightgrey rounded-[16px] p-[32px]
+      @apply bg-superLightBlue border-[1px] rounded-[16px] p-[32px] border-lightgrey;
     }
 
     &_bar {
-      @apply flex justify-between items-center
+      @apply flex justify-between items-center;
     }
 
     &_price {
       text-align: right;
-      @apply font-benzin text-2xl text-lightblue
+      @apply font-benzin text-2xl text-lightblue;
     }
 
     &_list {
       display: grid;
       row-gap: 16px;
 
-      @apply mt-[32px]
+      @apply mt-[32px] grid;
     }
 
     &_btn {
       & {
         @apply w-full bg-lightblue text-white flex justify-center uppercase
-        items-center py-[12px] px-[27px] rounded-[8px] mx-auto mt-[40px] font-benzin text-sm
-        gap-x-[10px]
+        py-[12px] px-[27px] rounded-[8px] mx-auto mt-[40px] font-benzin text-sm
+        gap-x-[10px] items-center;
       }
 
       & svg {
-        @apply -translate-y-[1px]
+        @apply -translate-y-[1px] translate-x-0;
       }
 
       & path {
-        @apply stroke-white
+        @apply stroke-white;
       }
     }
 
     &_price-label {
       text-align: right;
-      @apply font-averta text-sm text-grey -mt-[3px]
+      @apply text-sm text-grey -mt-[3px] font-averta;
     }
 
     & h3 {
-      @apply font-averta text-xl
+      @apply font-averta text-xl;
     }
   }
 
   &_item-reverse {
     & {
-      @apply bg-lightblue text-white
+      @apply bg-lightblue text-white;
     }
 
     & .home-pricing_benefit_icon {
-      @apply bg-white text-lightblue
+      @apply bg-white text-lightblue;
     }
 
     .home-pricing_item_btn {
       & {
-        @apply bg-white text-lightblue
+        @apply bg-white text-lightblue;
       }
 
 
       & path {
-        @apply stroke-lightblue
+        @apply stroke-lightblue;
       }
     }
 
     .home-pricing_item_price,
     .home-pricing_item_price-label {
-      @apply text-white
+      @apply text-white;
     }
   }
 }

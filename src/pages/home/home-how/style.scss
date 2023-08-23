@@ -1,6 +1,6 @@
 .home-how {
   & {
-    @apply max-w-screen-xl mx-auto pt-[250px] pb-[250px] pl-[100px] relative
+    @apply max-w-screen-xl mx-auto pt-[250px] pb-[250px] pl-[100px] relative;
   }
 
   &_dec {
@@ -8,7 +8,7 @@
     width: 411px;
     height: 412px;
     & {
-      @apply absolute top-0 -translate-x-1/2 -translate-y-1/2 z-10 bg-white p-[60px] rounded-full left-1/2
+      @apply absolute top-0 -translate-x-1/2 -translate-y-1/2 z-10 bg-white p-[60px] rounded-full left-1/2;
     }
 
     &_left  {
@@ -59,22 +59,22 @@
   }
 
   &_label {
-    @apply font-averta text-lg text-lightblue
+    @apply font-averta text-lg text-lightblue;
   }
 
   &_title {
-   @apply mt-[32px] mb-[24px] font-benzin text-6xl
+   @apply mt-[32px] mb-[24px] font-benzin text-6xl;
   }
 
   &_subtitle {
-    @apply text-base text-grey font-averta mb-[32px]
+    @apply text-base text-grey mb-[32px] font-averta;
   }
 }
 
 @media screen and (max-width: 600px) {
   .home-how {
     & {
-      @apply pt-[120px] pb-[70px]
+      @apply pt-[120px] pb-[70px] mx-auto;
     }
 
     &_dec {

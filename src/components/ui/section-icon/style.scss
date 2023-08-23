@@ -1,18 +1,18 @@
 .section-icon {
   & {
     @apply absolute w-[72px] h-[72px] bg-lightblue rounded-full left-0
-    -translate-x-1/2 flex items-center justify-center
+    -translate-x-1/2 flex items-center justify-center;
   }
 
   &_white {
-    @apply bg-white
+    @apply bg-white;
   }
 }
 
 @media screen and (max-width: 1320px){
   .section-icon {
     & {
-      @apply left-[10px] -translate-x-[1px]
+      @apply left-[10px] -translate-x-[1px] text-center;
     }
   }
 }
@@ -20,7 +20,7 @@
 @media screen and (max-width: 860px){
   .section-icon {
     & {
-      @apply -translate-y-[90px] translate-x-[10px]
+      @apply -translate-y-[90px] translate-x-[10px] text-center;
     }
   }
 }
@@ -28,7 +28,7 @@
 @media screen and (max-width: 600px){
   .section-icon {
     & {
-      @apply left-[50%] -translate-y-[90px] -translate-x-1/2
+      @apply left-[50%] -translate-y-[90px] -translate-x-1/2 text-center;
     }
   }
 }

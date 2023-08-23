@@ -2,21 +2,21 @@
 
   &_navigation {
     &_step {
-      @apply bg-lightgrey h-[40px] rounded-[72px] flex justify-center items-center text-grey cursor-pointer
+      @apply bg-lightgrey h-[40px] rounded-[72px] flex justify-center items-center text-grey cursor-pointer;
     }
 
     &_step-active {
       @apply bg-lightblue text-white
     }
 
-    @apply grid gap-x-[88px] grid-cols-4 mb-[32px]
+    @apply grid gap-x-[88px] mb-[32px] grid-cols-4;
   }
 }
 
 @media screen  and (max-width: 1100px) {
   .explore-form {
     &_navigation {
-      @apply grid gap-x-[20px]
+      @apply gap-x-[20px] grid;
     }
   }
 }

@@ -1,10 +1,10 @@
 .home-redundant {
   & {
-    @apply max-w-screen-xl mx-auto text-white text-lg
+    @apply max-w-screen-xl mx-auto text-white text-lg;
   }
 
   &_section {
-    @apply bg-lightblue rounded-[40px] -mt-[50px]
+    @apply rounded-[40px] -mt-[50px] bg-lightblue;
   }
 
   &_wrap {
@@ -17,15 +17,15 @@
 
   &_content {
     & {
-      @apply relative pt-[200px] pb-[300px] pl-[100px]
+      @apply pt-[200px] pb-[300px] pl-[100px] bg-lightblue;
     }
 
     &_label {
-      @apply font-averta uppercase
+      @apply font-averta uppercase;
     }
 
     &_text {
-      @apply mt-[32px] font-benzin text-6xl pr-[50px] uppercase
+      @apply mt-[32px] font-benzin text-6xl pr-[50px] uppercase;
     }
   }
 
@@ -44,11 +44,11 @@
   .home-redundant {
     &_content {
       & {
-        @apply pt-[120px] pb-[170px]
+        @apply pt-[120px] pb-[170px] bg-lightblue;
       }
 
       &_text {
-        @apply pr-0
+        @apply pr-0;
       }
     }
   }

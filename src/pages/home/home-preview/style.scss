@@ -3,7 +3,7 @@
     height: 100vh;
     width: 100vw;
     overflow: hidden;
-    @apply bg-darkblue rounded-b-[60px]
+    @apply rounded-b-[60px] bg-darkblue;
   }
 
   &_container {
@@ -26,17 +26,17 @@
 
   &_content {
     &_title {
-      @apply font-benzin text-white text-7xl uppercase
+      @apply font-benzin text-white text-7xl uppercase;
     }
 
     &_subtitle {
-      @apply font-averta text-grey mt-[32px] mb-[40px] max-w-screen-md mx-auto
+      @apply font-averta text-grey mt-[32px] mb-[40px] max-w-screen-md mx-auto;
     }
 
     &_action {
-      @apply flex justify-center
+      @apply flex justify-center;
     }
 
-    @apply max-w-screen-lg mx-auto pt-[140px] text-center
+    @apply max-w-screen-lg mx-auto pt-[140px] text-center;
   }
 }

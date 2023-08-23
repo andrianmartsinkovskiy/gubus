@@ -1,10 +1,10 @@
 .home-clients {
   & {
-    @apply max-w-screen-xl mx-auto text-white text-lg
+    @apply max-w-screen-xl mx-auto text-white text-lg;
   }
 
   &_section {
-    @apply bg-lightblue rounded-[40px]
+    @apply rounded-[40px] bg-lightblue;
 
   }
 
@@ -18,15 +18,15 @@
 
   &_content {
     & {
-      @apply relative pt-[200px] pb-[200px] pl-[100px]
+      @apply pt-[200px] pb-[200px] pl-[100px] relative;
     }
 
     &_label {
-      @apply font-averta uppercase
+      @apply font-averta uppercase;
     }
 
     &_text {
-      @apply mt-[32px] font-benzin text-6xl pr-[50px]
+      @apply mt-[32px] text-6xl pr-[50px] font-benzin;
     }
   }
 
@@ -44,7 +44,7 @@
   .home-clients {
     &_content {
       &_text {
-        @apply pr-0
+        @apply pr-0;
       }
     }
   }
@@ -53,7 +53,7 @@
 @media screen and (max-width: 600px) {
   .home-clients {
     &_content {
-      @apply pt-[120px] pb-[70px]
+      @apply pt-[120px] pb-[70px] block;
     }
   }
 }

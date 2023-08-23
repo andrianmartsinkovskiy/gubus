@@ -1,35 +1,36 @@
 .button-with-arrow {
   & {
     transition: 0.3s;
-    @apply bg-lightblue font-benzin uppercase px-[20px] py-[12px] text-white rounded-[8px] text-sm flex items-center gap-x-[8px]
+    @apply bg-lightblue uppercase
+    px-[20px] py-[12px] text-white rounded-[8px] text-sm flex items-center gap-x-[8px] font-benzin;
   }
 
   &_icon {
     transform: translateY(-1px);
 
     & path {
-      @apply stroke-white
+      @apply stroke-white;
     }
   }
 
   &:hover {
     box-shadow: rgba(42, 148, 185, 0.4) 0px 8px 24px;
-    @apply bg-lightblueHover
+    @apply bg-lightblueHover;
   }
 }
 
 .button-with-arrow-white {
   & {
     transition: 0.3s;
-    @apply bg-white text-lightblue
+    @apply bg-white text-lightblue;
   }
 
   path {
-    @apply stroke-lightblue
+    @apply stroke-lightblue;
   }
 
   &:hover {
     box-shadow: rgba(255, 255, 255, 0.2) 0px 8px 24px;
-    @apply bg-lightgrey
+    @apply bg-lightgrey;
   }
 }
