@@ -24,7 +24,6 @@ const FormSelect = ({element, form, setForm}) => {
     setForm(newForm)
   }
 
-  console.log(element, 'el')
 
   return (
     <div className='form-select'>

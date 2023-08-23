@@ -103,7 +103,6 @@ const ExploreForm = () => {
   const activeStep = form.find(item => item.isActive)
 
   const changeActiveStep = (key) => {
-    console.log(key, 'key')
     setForm(prev => {
       return prev.map(item => {
         return {

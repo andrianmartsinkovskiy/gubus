@@ -9,8 +9,6 @@ import {FormSelect} from "../../../forms/form-select";
 
 const ExploreFormContainer = ({setForm, form, activeStep}) => {
 
-  console.log(activeStep, 'activeStep')
-
   return (
     <div className="explore-form-container">
       {

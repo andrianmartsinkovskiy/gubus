@@ -2,6 +2,7 @@ import React, {useEffect, useState} from "react";
 import {Logo} from "../ui/logo";
 import './style.scss'
 import {ButtonDefault} from "../ui/buttons/button-default";
+import {Animated} from "react-animated-css";
 
 const NAVIGATION_LIST = [
   {title: "Explore the problem", link: ""},
@@ -27,19 +28,25 @@ const Navbar = () => {
   return (
     <div className={navbarWrapClass}>
       <div className='navbar'>
-        <div className="navbar_logo">
-          <Logo />
-        </div>
-        <ul className="navbar_list">
-          {
-            NAVIGATION_LIST.map(item => (
-              <h3 key={item.title} className="navbar_list_item">{item.title}</h3>
-            ))
-          }
-        </ul>
-        <div className="navbar_submit">
-          <ButtonDefault text="log in" />
-        </div>
+        <Animated animationIn="slideInLeft" animationOut="fadeOut" animationInDelay={0} isVisible={true}>
+            <div className="navbar_logo">
+              <Logo />
+            </div>
+        </Animated>
+        <Animated animationIn="slideInDown" animationOut="fadeOut" animationInDelay={0} isVisible={true}>
+          <ul className="navbar_list">
+            {
+              NAVIGATION_LIST.map(item => (
+                <h3 key={item.title} className="navbar_list_item">{item.title}</h3>
+              ))
+            }
+          </ul>
+        </Animated>
+        <Animated animationIn="slideInRight" animationOut="fadeOut" animationInDelay={0} isVisible={true}>
+          <div className="navbar_submit">
+            <ButtonDefault text="log in" />
+          </div>
+        </Animated>
       </div>
     </div>
   )

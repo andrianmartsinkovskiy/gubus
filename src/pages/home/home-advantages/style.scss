@@ -29,10 +29,17 @@
     column-gap: 24px;
   }
 
+  &_item-wrap {
+    & > div {
+      height: 100%;
+    }
+  }
+
   &_item {
     & {
       @apply bg-whiteTransparent p-[24px] rounded-[16px] text-white
     }
+
 
     &_top {
       display: grid;
