@@ -1,0 +1,22 @@
+.home-get {
+  &_wrap {
+    @apply bg-lightblue rounded-t-[50px]
+  }
+
+  &_icon {
+    @apply mx-auto w-[72px] h-[72px] bg-light rounded-full flex items-center justify-center mb-[32px]
+  }
+
+  &_title {
+    max-width: 1059px;
+    @apply mx-auto text-white text-6xl font-benzin uppercase
+  }
+
+  &_btn {
+    @apply flex justify-center mt-[40px]
+  }
+
+  &_container {
+    @apply max-w-screen-xl mx-auto text-center pt-[100px] pb-[200px]  mt-[30px]
+  }
+}

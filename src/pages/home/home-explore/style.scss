@@ -1,0 +1,41 @@
+.home-explore {
+  & {
+    @apply max-w-screen-xl mx-auto pl-[100px] relative pb-[144px]
+  }
+
+  &_title {
+    @apply font-benzin text-6xl uppercase
+  }
+
+  &_subtitle {
+    @apply mt-[5px] font-averta text-lg text-grey mb-[32px]
+  }
+
+  &_line {
+    position: absolute;
+    left:  0;
+    top: 100px;
+    width: 4px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, #128CFD 9.38%, #128CFD 61.46%, #FFF 76.75%, rgba(255, 255, 255, 0.00) 100%);
+    height: calc(100% + 65px);
+  }
+}
+
+@media screen and (max-width: 1320px) {
+  .home-explore {
+    @apply mt-[70px]
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .home-explore {
+    @apply pt-[70px]
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .home-explore {
+    @apply pb-[50px]
+  }
+}
+

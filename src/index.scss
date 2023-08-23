@@ -1,3 +1,60 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: 'Benzin';
+  src: local('Benzin Medium'), local('Benzin-Medium'),
+  url('./assets/fonts/benzin-medium/Benzin-Medium.woff2') format('woff2'),
+  url('./assets/fonts/benzin-medium/Benzin-Medium.woff') format('woff'),
+  url('./assets/fonts/benzin-medium/Benzin-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+.blue {
+  @apply text-lightblue
+}
+
+.opacity {
+  opacity: 0.5;
+}
+
+
+body {
+  @apply text-black
+}
+
+body::-webkit-scrollbar{
+  display: none;
+}
+
+@media screen and (max-width: 1320px) {
+  .line {
+    display: none;
+  }
+
+  .block {
+    padding-left: 100px !important;
+    padding-right: 100px !important;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .title {
+    font-size: 30px !important;
+  }
+}
+
+@media screen and (max-width: 860px){
+  .block {
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .title {
+    font-size: 25px !important;
+  }
+}

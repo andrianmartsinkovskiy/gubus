@@ -1,8 +1,12 @@
-.button-with-arrow {
- &_icon {
-  transform: translateY(-1px);
- }
+.button-transparent {
+  &_icon {
+    & path {
+      stroke: #128CFD !important;
+    }
 
- @apply bg-lightblue font-benzin mx-auto
- uppercase px-[20px] py-[12px] text-white rounded-[8px] text-sm flex items-center gap-x-[8px]
+    transform: translateY(-1px);
+  }
+
+  @apply border-2 border-lightblue font-benzin w-fit text-lightblue
+  uppercase px-[20px] py-[12px] rounded-[8px] text-sm flex items-center gap-x-[8px]
 }

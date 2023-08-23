@@ -1,34 +1,41 @@
-.home-clients-wrap {
-  @apply bg-lightblue rounded-[40px]
-}
+.home-redundant {
+  & {
+    @apply max-w-screen-xl mx-auto text-white text-lg
+  }
 
-.home-clients-line {
-  position: absolute;
-  left:  0;
-  top: 300px;
-  width: 4px;
-  height: calc(100% - 215px);
-  background: linear-gradient(to top, rgba(255, 255, 255, 0.00) 0%, #128CFD 9.38%, #FFF 27.99%, #FFF 82.07%, rgba(255, 255, 255, 0.00) 100%);
-}
+  &_wrap {
+    @apply bg-lightblue rounded-[40px] -mt-[50px]
+  }
 
-.home-clients {
-  .home-clients_content {
-    &_icon {
-      @apply absolute w-[72px] h-[72px] bg-light rounded-full left-0
-      -translate-x-1/2 flex items-center justify-center
+  &_content {
+    & {
+      @apply relative pt-[200px] pb-[300px] pl-[100px]
     }
 
     &_label {
-      @apply font-averta
+      @apply font-averta uppercase
     }
 
     &_text {
-      @apply mt-[32px] font-benzin text-6xl pr-[50px]
+      @apply mt-[32px] font-benzin text-6xl pr-[50px] uppercase
     }
-
-    @apply relative pt-[200px] pb-[200px] pl-[100px]
   }
 
-  @apply max-w-screen-xl mx-auto text-white text-lg
+  &_line {
+    position: absolute;
+    left:  0;
+    top: 300px;
+    width: 4px;
+    height: calc(100% - 90px);
+    background: linear-gradient(to top, rgba(255, 255, 255, 0.00) 0%, #128CFD 9.38%, #FFF 50.99%, #FFF 82.07%, rgba(255, 255, 255, 0.00) 100%);
+  }
 }
 
+
+@media screen and (max-width: 600px) {
+  .home-redundant {
+    &_content {
+      @apply pt-[120px] pb-[170px]
+    }
+  }
+}

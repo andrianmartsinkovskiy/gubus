@@ -1,0 +1,42 @@
+.navbar-wrap {
+  transition: 0.6s;
+  @apply fixed w-full z-50
+}
+
+.navbar-wrap-active {
+  background-color: rgba(0,0,0,0.9);
+}
+
+.navbar {
+  & {
+    height: 80px;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: 150px 1fr 150px;
+    align-items: center;
+    @apply max-w-screen-xl mx-auto
+  }
+
+  &_list {
+    @apply flex justify-center gap-x-[40px] font-averta text-grey text-sm cursor-pointer
+  }
+
+  &_submit {
+    @apply flex justify-end
+  }
+}
+
+
+@media screen  and (max-width: 1100px) {
+  .navbar {
+    & {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &_list {
+      display: none;
+    }
+  }
+}

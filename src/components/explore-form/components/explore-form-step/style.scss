@@ -1,0 +1,46 @@
+.explore-form-step {
+  & {
+    @apply h-[353px] bg-light p-[33px] grid grid-cols-2 gap-x-[88px]
+  }
+
+  &_right {
+    @apply flex flex-col justify-end gap-y-[24px]
+  }
+
+  &_left {
+    overflow-y: scroll;
+    padding-right: 40px;
+  }
+
+  &_left::-webkit-scrollbar-thumb {
+    background-color: blue;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid orange;  /* creates padding around scroll thumb */
+  }
+
+  &_submit {
+    @apply flex justify-end
+  }
+
+  &_area {
+    &::placeholder {
+      @apply text-grey
+    }
+
+    @apply block w-full h-full resize-none p-[15px] rounded-[12px] border-[1px] border-lightgrey font-averta text-lg
+  }
+
+}
+
+@media screen  and (max-width: 860px) {
+  .explore-form-step {
+    & {
+      @apply h-auto bg-light p-[33px] grid grid-cols-1 gap-y-[40px]
+    }
+
+    &_left {
+      height: 250px;
+    }
+  }
+}
+

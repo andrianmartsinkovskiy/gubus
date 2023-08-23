@@ -1,0 +1,117 @@
+.home-event {
+  &_wrap {
+    @apply bg-black
+  }
+
+  &_container {
+    & {
+      @apply max-w-screen-xl mx-auto pt-[150px] pb-[150px] relative text-white pl-[100px]
+    }
+  }
+
+  &_icon {
+    @apply  font-benzin text-xl text-white pr-[3px] pt-[3px]
+  }
+
+  &_icon-second {
+    @apply absolute w-[60px] h-[60px] bg-lightBlack rounded-full left-0 border-[1px] border-superLightBlack
+     flex items-center justify-center font-benzin text-base text-white pl-[2px] pt-[4px] translate-y-[40px]
+    translate-x-[5px]
+  }
+
+  &_line {
+    position: absolute;
+    left:  0;
+    top: 260px;
+    width: 4px;
+    height: calc(100% - 140px);
+    background: linear-gradient(180deg, rgba(22, 27, 34, 0.00) 0%, #128CFD 9.38%, #128CFD 27.99%, #128CFD 87.87%, rgba(255, 255, 255, 0.00) 100%);
+  }
+
+  &_title {
+    @apply text-6xl font-benzin mb-[10px] uppercase
+  }
+
+  &_subtitle {
+    @apply font-averta text-lg text-grey mb-[35px]
+  }
+
+  &_table {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 32px;
+    @apply p-[48px] bg-lightBlack rounded-[16px] border-[1px] border-superLightBlack
+  }
+
+  &_content {
+    & {
+      @apply pb-[20px]
+    }
+    &_label {
+      @apply mb-[32px] px-[16px] py-[6px] rounded-[32px] bg-lightblue w-fit text-lg font-averta
+    }
+  }
+
+  &_list {
+    display: grid;
+    row-gap: 10px;
+
+    &_item {
+      display: grid;
+      grid-template-columns: 50px 1fr;
+
+      @apply p-[12px] rounded-[8px] text-white font-averta text-sm cursor-pointer
+    }
+
+    &_item-active {
+      @apply bg-superLightBlack
+    }
+
+    &_item-icon {
+      @apply flex justify-center items-center
+    }
+  }
+
+  &_note {
+    width: calc(100% + 32px);
+    @apply mt-[30px] px-[16px] py-[8px] bg-blackTransparent rounded-l-[8px] text-lightblue font-averta text-sm
+  }
+
+  &_poster {
+    & {
+      backdrop-filter: blur(30px);
+      width: calc(100% + 48px);
+      height: fit-content;
+      @apply pt-[20px] pb-[20px] pl-[20px] flex justify-end items-center bg-superLightBlack rounded-l-[16px]
+    }
+
+    & img {
+      @apply w-full h-full
+    }
+  }
+}
+
+@media screen and (max-width: 1320px) {
+  .home-event {
+    &_icon-second {
+      @apply left-[20px] translate-y-[60px]
+    }
+  }
+}
+
+@media screen and (max-width: 860px){
+  .home-event {
+    &_table {
+      grid-template-columns: 1fr;
+      row-gap: 50px;
+    }
+
+    &_poster {
+      grid-row: 1;
+    }
+
+    &_icon-second {
+      display: none;
+    }
+  }
+}

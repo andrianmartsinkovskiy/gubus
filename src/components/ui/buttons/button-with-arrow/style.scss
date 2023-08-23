@@ -1,3 +1,24 @@
-.button-default {
- @apply bg-lightblue font-benzin uppercase px-[20px] py-[12px] text-white rounded-[8px] text-xs
+.button-with-arrow {
+  & {
+    @apply bg-lightblue font-benzin uppercase px-[20px] py-[12px] text-white rounded-[8px] text-sm flex items-center gap-x-[8px]
+  }
+
+  &_icon {
+    transform: translateY(-1px);
+
+    & path {
+      @apply stroke-white
+    }
+  }
+
+}
+
+.button-with-arrow-white {
+  & {
+    @apply bg-white text-lightblue
+  }
+
+  path {
+    @apply stroke-lightblue
+  }
 }

@@ -1,0 +1,50 @@
+.home-clients {
+  & {
+    @apply max-w-screen-xl mx-auto text-white text-lg
+  }
+
+  &_wrap {
+    @apply bg-lightblue rounded-[40px]
+  }
+
+  &_content {
+    & {
+      @apply relative pt-[200px] pb-[200px] pl-[100px]
+    }
+
+    &_label {
+      @apply font-averta uppercase
+    }
+
+    &_text {
+      @apply mt-[32px] font-benzin text-6xl pr-[50px]
+    }
+  }
+
+  &_line {
+    position: absolute;
+    left:  0;
+    top: 260px;
+    width: 4px;
+    height: calc(100% - 170px);
+    background: linear-gradient(to top, rgba(255, 255, 255, 0.00) 0%, #128CFD 9.38%, #FFF 27.99%, #FFF 82.07%, rgba(255, 255, 255, 0.00) 100%);
+  }
+}
+
+@media screen and (max-width: 1320px) {
+  .home-clients {
+    &_content {
+      &_text {
+        @apply pr-0
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .home-clients {
+    &_content {
+      @apply pt-[120px] pb-[70px]
+    }
+  }
+}

@@ -1,0 +1,21 @@
+.form-checkbox {
+  display: grid;
+  row-gap: 16px;
+
+  &_item {
+    opacity: 0.3;
+    @apply flex items-start gap-[16px] cursor-pointer
+  }
+
+  &_item-active {
+    opacity: 1;
+   .form-checkbox_value {
+     @apply border-[4px] border-lightblue
+   }
+  }
+
+  &_value {
+    transform: translateY(3px);
+    @apply border-2 w-[16px] h-[16px] rounded-full
+  }
+}

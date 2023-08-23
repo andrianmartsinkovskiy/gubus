@@ -1,5 +1,9 @@
 .form-wrap {
-  & {
-    @apply() grid
+  display: grid;
+  row-gap: 10px;
+  font-weight: 700;
+
+  &_title {
+    @apply text-lg font-averta
   }
 }
