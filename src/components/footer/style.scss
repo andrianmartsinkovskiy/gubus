@@ -5,10 +5,12 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    padding-top: 50px;
+    padding-bottom: 20px;
   }
 
   &_section {
-    @apply bg-darkblue pb-[20px] pt-[50px] text-white rounded-t-[50px] -mt-[100px]
+    @apply bg-darkblue text-white rounded-t-[50px] -mt-[100px]
   }
 
   &_container {
