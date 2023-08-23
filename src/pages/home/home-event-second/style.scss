@@ -75,6 +75,12 @@
     &_item-icon {
       @apply flex justify-center items-center
     }
+
+    &_item-text {
+      word-wrap: break-word;
+      max-width: 100%;
+      overflow: hidden;
+    }
   }
 
   &_note {
@@ -111,12 +117,28 @@
       row-gap: 50px;
     }
 
+    &_table {
+      display: grid;
+      grid-template-columns: 1fr;
+      column-gap: 32px;
+      @apply px-[20px] py-[0]
+    }
+
     &_poster {
       grid-row: 1;
     }
 
     &_icon-second {
       display: none;
+    }
+
+    &_poster {
+      width: 100%;
+      @apply -ml-[20px] mt-[20px]
+    }
+
+    &_note {
+      @apply w-full ml-0 rounded-[16px]
     }
   }
 }

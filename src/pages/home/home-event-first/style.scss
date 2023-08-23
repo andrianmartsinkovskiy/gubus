@@ -104,10 +104,19 @@
     &_table {
       grid-template-columns: 1fr;
       row-gap: 50px;
+      @apply px-[20px] py-[0]
     }
 
     &_poster {
+      margin-top: 20px;
       grid-row: 1;
+      width: 100%;
+      transform: translateX(20px);
+    }
+
+    &_note {
+      width: 100%;
+      border-radius: 16px;
     }
 
     &_icon-second {

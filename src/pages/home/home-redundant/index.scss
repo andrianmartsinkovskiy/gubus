@@ -3,8 +3,16 @@
     @apply max-w-screen-xl mx-auto text-white text-lg
   }
 
-  &_wrap {
+  &_section {
     @apply bg-lightblue rounded-[40px] -mt-[50px]
+  }
+
+  &_wrap {
+    background: url("../../../assets/images/bg-lines.svg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
   }
 
   &_content {
@@ -35,7 +43,13 @@
 @media screen and (max-width: 600px) {
   .home-redundant {
     &_content {
-      @apply pt-[120px] pb-[170px]
+      & {
+        @apply pt-[120px] pb-[170px]
+      }
+
+      &_text {
+        @apply pr-0
+      }
     }
   }
 }

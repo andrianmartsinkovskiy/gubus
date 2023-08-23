@@ -58,6 +58,12 @@ const HomePricing = () => {
   return (
     <div className="home-pricing_wrap block">
       <div className='home-how_dec'>
+        <div className="home-how_dec_left">
+          <div></div>
+        </div>
+        <div className="home-how_dec_right">
+          <div></div>
+        </div>
         <img src={howImg} alt=""/>
       </div>
       <div className="home-pricing_line line">
@@ -66,8 +72,8 @@ const HomePricing = () => {
       <SectionIcon>
         <img src={coinIcon} alt=""/>
       </SectionIcon>
-      <h2 className="home-pricing_title title">PRICING</h2>
-      <p className="home-pricing_subtitle">The incredibly low GUBUS monthly rate</p>
+      <h2 className="home-pricing_title title mobile-text-center">PRICING</h2>
+      <p className="home-pricing_subtitle mobile-text-center">The incredibly low GUBUS monthly rate</p>
       <div className="home-pricing_section">
         <div className="home-pricing_bar">
           {

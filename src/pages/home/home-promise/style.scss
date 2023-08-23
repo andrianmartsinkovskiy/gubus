@@ -10,10 +10,18 @@
     @apply max-w-screen-xl mx-auto pt-[250px] pb-[300px] text-white relative
   }
 
-  &_wrap {
+  &_section {
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
     @apply bg-black
+  }
+
+  &_wrap {
+    background: url("../../../assets/images/bg-lines.svg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
   }
 
   &_line {

@@ -9,8 +9,14 @@ import {SectionIcon} from "../../../components/ui/section-icon";
 const HomeHow = () => {
 
   return (
-    <div className='home-how block'>
+    <div className='home-how mobile-text-center block'>
       <div className='home-how_dec'>
+        <div className="home-how_dec_left">
+          <div></div>
+        </div>
+        <div className="home-how_dec_right">
+          <div></div>
+        </div>
         <img src={howImg} alt=""/>
       </div>
       <SectionIcon>

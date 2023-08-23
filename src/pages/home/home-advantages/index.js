@@ -45,41 +45,43 @@ const LIST_DATA = [
 const HomeAdvantages = () => {
 
   return (
-    <div className="home-advantages_wrap">
-      <div className="home-advantages_container block">
-        <SectionIcon isWhite={true}>
-          <img src={imgIcon} alt=""/>
-        </SectionIcon>
-        <div className="home-advantages_line line">
-          <img src={imgIcon} alt=""/>
-        </div>
-        <h2 className="home-advantages_title title">advantages</h2>
-        <p className="home-advantages_subtitle">
-          Extremely functional, highly secured by Google protocols, on what GUBUS has built User Front and Admin panel.
-          For your unbelievable functionality, the most complex challenges and smooth everyday working
-        </p>
+    <div className="home-advantages_section">
+      <div className="home-advantages_wrap">
+        <div className="home-advantages_container block">
+          <SectionIcon isWhite={true}>
+            <img src={imgIcon} alt=""/>
+          </SectionIcon>
+          <div className="home-advantages_line line">
+            <img src={imgIcon} alt=""/>
+          </div>
+          <h2 className="home-advantages_title title">advantages</h2>
+          <p className="home-advantages_subtitle">
+            Extremely functional, highly secured by Google protocols, on what GUBUS has built User Front and Admin panel.
+            For your unbelievable functionality, the most complex challenges and smooth everyday working
+          </p>
 
-        <div className="home-advantages_list">
-          {
-            LIST_DATA.map((item) => (
-              <div key={Math.random()} className={`home-advantages_item ${item.isWhite && "home-advantages_item-white"}`}>
-                <div className="home-advantages_item_top">
-                  <div>
-                    <div className='home-advantages_item_icon'>
-                      <img src={item.icon} alt=""/>
+          <div className="home-advantages_list">
+            {
+              LIST_DATA.map((item) => (
+                <div key={Math.random()} className={`home-advantages_item ${item.isWhite && "home-advantages_item-white"}`}>
+                  <div className="home-advantages_item_top">
+                    <div>
+                      <div className='home-advantages_item_icon'>
+                        <img src={item.icon} alt=""/>
+                      </div>
+                    </div>
+                    <div>
+                      <h2>{item.title}</h2>
                     </div>
                   </div>
-                  <div>
-                    <h2>{item.title}</h2>
-                  </div>
-                </div>
 
-                <p className="home-advantages_item_text">
-                  {item.text}
-                </p>
-              </div>
-            ))
-          }
+                  <p className="home-advantages_item_text">
+                    {item.text}
+                  </p>
+                </div>
+              ))
+            }
+          </div>
         </div>
       </div>
     </div>

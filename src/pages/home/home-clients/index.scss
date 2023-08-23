@@ -3,8 +3,17 @@
     @apply max-w-screen-xl mx-auto text-white text-lg
   }
 
-  &_wrap {
+  &_section {
     @apply bg-lightblue rounded-[40px]
+
+  }
+
+  &_wrap {
+    background: url("../../../assets/images/bg-lines.svg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
   }
 
   &_content {

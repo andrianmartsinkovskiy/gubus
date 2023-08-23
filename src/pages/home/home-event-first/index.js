@@ -14,10 +14,10 @@ const HomeEventFirst = ({item, index}) => {
           <span className='home-event_icon'>0{index+1}</span>
         </SectionIcon>
         <div className='home-event_line line'></div>
-        <h2 className="home-event_title title">
+        <h2 className="home-event_title title mobile-text-center">
           {item.titleWhite} <span className='blue'> {item.titleBlue}</span>
         </h2>
-        <p className="home-event_subtitle">
+        <p className="home-event_subtitle mobile-text-center">
           {item.subtitle}
         </p>
 

@@ -20,7 +20,15 @@
 @media screen and (max-width: 860px){
   .section-icon {
     & {
-      @apply left-[20px] -translate-y-[90px]
+      @apply -translate-y-[90px] translate-x-[10px]
+    }
+  }
+}
+
+@media screen and (max-width: 600px){
+  .section-icon {
+    & {
+      @apply left-[50%] -translate-y-[90px] -translate-x-1/2
     }
   }
 }

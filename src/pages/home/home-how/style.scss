@@ -4,7 +4,46 @@
   }
 
   &_dec {
-    @apply absolute top-0 -translate-x-1/2 -translate-y-1/2 z-10 bg-white p-[60px] rounded-full left-1/2
+    position: relative;
+    width: 411px;
+    height: 412px;
+    & {
+      @apply absolute top-0 -translate-x-1/2 -translate-y-1/2 z-10 bg-white p-[60px] rounded-full left-1/2
+    }
+
+    &_left  {
+      background: white;
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      z-index: 50;
+      left: -95px;
+      top: 106px;
+
+      & > div {
+        width: 100%;
+        height: 100%;
+        background: #128CFD;
+        border-bottom-right-radius: 50%;
+      }
+    }
+
+    &_right  {
+      background: white;
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      z-index: 50;
+      right: -96px;
+      top: 106px;
+
+      & > div {
+        width: 100%;
+        height: 100%;
+        background: #128CFD;
+        border-bottom-left-radius: 50%;
+      }
+    }
   }
 
   &_line {
@@ -33,6 +72,10 @@
   .home-how {
     & {
       @apply pt-[120px] pb-[70px]
+    }
+
+    &_dec {
+      display: none;
     }
   }
 }

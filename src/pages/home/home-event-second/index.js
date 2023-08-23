@@ -13,10 +13,10 @@ const HomeEventSecond = ({isLast, item, index}) => {
           <span className="home-event-second_icon">0{index+1}</span>
         </SectionIcon>
         <div className={`home-event-second_line line ${isLast && 'home-event-second_line-last'}`}></div>
-        <h2 className="home-event-second_title title">
+        <h2 className="home-event-second_title title mobile-text-center">
           <span className='blue'>{item.titleWhite} </span> {item.titleBlue}
         </h2>
-        <p className="home-event-second_subtitle">
+        <p className="home-event-second_subtitle mobile-text-center">
           {item.subtitle}
         </p>
 
@@ -38,7 +38,7 @@ const HomeEventSecond = ({isLast, item, index}) => {
                     <div className="home-event-second_list_item-icon">
                       <img src={label.icon} alt=""/>
                     </div>
-                    <div>
+                    <div className="home-event-second_list_item-text">
                       {
                         label.text
                       }

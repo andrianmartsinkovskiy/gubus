@@ -20,7 +20,7 @@ const HomeInsight = () => {
         <SectionIcon>
           <img src={starImg} alt=""/>
         </SectionIcon>
-        <div className='home-insight_content block'>
+        <div className='home-insight_content mobile-text-center block'>
           <p className='home-insight_content_label'>INSIGHT</p>
           <h2 className='home-insight_content_title title'>
             <span className='blue'>GUBUS </span> IS A POWERFUL, LIGHTWEIGHT, ULTRA

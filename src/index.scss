@@ -57,4 +57,11 @@ body::-webkit-scrollbar{
   .title {
     font-size: 25px !important;
   }
+
+  .mobile-text-center {
+    text-align: center !important;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
 }

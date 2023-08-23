@@ -1,5 +1,13 @@
 .footer {
   &_wrap {
+    background: url("./../../assets/images/bg-lines.svg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  &_section {
     @apply bg-darkblue pb-[20px] pt-[50px] text-white rounded-t-[50px] -mt-[100px]
   }
 
@@ -46,7 +54,7 @@
   }
 }
 
-@media screen  and (max-width: 1100px) {
+@media screen and (max-width: 1100px) {
   .footer {
     &_list {
       grid-template-columns: 1fr 1fr 1fr;
@@ -61,9 +69,18 @@
 
 @media screen and (max-width: 600px) {
   .footer {
+    &_to-top-wrap {
+      display: none;
+    }
+
     &_list {
       grid-template-columns: 1fr 1fr;
       row-gap: 50px;
+
+      &_social {
+        grid-row: 1;
+        grid-column: 2;
+      }
     }
 
     &_to-top {
