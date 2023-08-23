@@ -10,6 +10,8 @@ const HomeExplore = () => {
   const ref = useRef()
   const isInView = useOnScreen(ref)
 
+  console.log(isInView, 'isInView')
+
 
   return (
     <div ref={ref}  className="home-explore block">
