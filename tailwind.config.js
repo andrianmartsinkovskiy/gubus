@@ -45,7 +45,9 @@ module.exports = {
     extend: {},
     fontFamily: {
       averta: ['Averta Demo PE Regular', 'sans-serif'],
-      benzin: ['Benzin', 'sans-serif']
+      benzin: ['Averta Demo PE Regular', 'sans-serif'],
+      benzina: ['Averta Demo PE Regular', 'sans-serif'],
+
     }
   },
   plugins: [],

@@ -2,15 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap');
+
 @font-face {
-  font-family: 'Benzin';
-  src: local('Benzin Medium'), local('Benzin-Medium'),
-  url('./assets/fonts/benzin-medium/Benzin-Medium.woff2') format('woff2'),
-  url('./assets/fonts/benzin-medium/Benzin-Medium.woff') format('woff'),
-  url('./assets/fonts/benzin-medium/Benzin-Medium.ttf') format('truetype');
-  font-weight: 500;
-  font-style: normal;
+  font-family: 'AlQalamKhateSunbali';
+  src: local('AlQalamKhateSunbali'), url('./assets/fonts/qi/AlQalamKhateSunbali.woff') format('woff');
 }
+
+
 
 .blue {
   @apply text-lightblue
@@ -27,6 +27,12 @@ body {
 
 body::-webkit-scrollbar{
   display: none;
+}
+
+.line {
+  z-index: 40 !important;
+  transition: 3s;
+  transition-delay: 0.5s !important;
 }
 
 @media screen and (max-width: 1320px) {
@@ -65,3 +71,5 @@ body::-webkit-scrollbar{
     flex-direction: column;
   }
 }
+
+

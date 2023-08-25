@@ -11,14 +11,14 @@ const HomePromise = () => {
   const isInView = useOnScreen(ref)
 
   return (
-    <div className="home-promise_section">
+    <div className="home-promise_section" >
       <div className='home-promise_wrap'>
         <div className='home-promise'>
-          <div className="home-promise_line line"></div>
+          <div className="home-promise_line line" style={{maxHeight: isInView ? '2000px' : 0}}></div>
 
           <img className="home-promise-bg" src={bgLight} alt=""/>
 
-          <SectionIcon >
+          <SectionIcon isInView={isInView}>
             <img src={starImg} alt=""/>
           </SectionIcon>
 

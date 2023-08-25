@@ -12,15 +12,20 @@
   }
 
   &_icon {
+    transition: 2s;
     @apply mx-auto w-[72px] h-[72px] bg-light rounded-full flex items-center mb-[32px] justify-center;
   }
 
   &_title {
+    transition-delay: 0.4s !important;
+    transition: 1s;
     max-width: 1059px;
     @apply mx-auto text-white text-6xl font-benzin uppercase;
   }
 
   &_btn {
+    transition: 0.8s;
+    transition-delay: 1s !important;
     @apply flex mt-[40px] justify-center;
   }
 

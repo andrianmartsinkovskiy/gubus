@@ -1,4 +1,5 @@
 .home-poster {
+  min-height: 500px;
   @apply w-fit mx-auto -mt-[250px]
   p-[20px] bg-whiteTransparent rounded-[32px] backdrop-blur-[50px] border-[1px] border-blackTransparent;
 }

@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react'
+import React from 'react'
 import {Navbar} from "../../components/navbar";
 import {HomePreview} from "./home-preview";
 import {HomePoster} from "./home-poster";
@@ -15,17 +15,9 @@ import {HomeEventList} from "./home-event-list";
 
 
 const HomePage = () => {
-  const [opacity, setOpacity] = useState(0)
-
-  useEffect(() => {
-    setTimeout(() => {
-      setOpacity(1)
-    }, 100)
-  }, [])
-
 
   return (
-    <div style={{opacity: opacity}}>
+    <div>
       <Navbar/>
       <HomePreview/>
       <HomePoster/>

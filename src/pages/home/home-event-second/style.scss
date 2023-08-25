@@ -14,6 +14,8 @@
   }
 
   &_icon-second {
+    transition: 1s !important;
+    transition-delay: 0.5s !important;
     @apply absolute w-[60px] h-[60px] bg-lightgrey rounded-full left-0 border-[1px] border-superLightBlue
      flex justify-center font-benzin text-base text-black pl-[2px] pt-[4px] translate-y-[40px]
     translate-x-[5px] items-center;

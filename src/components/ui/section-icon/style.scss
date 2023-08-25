@@ -1,5 +1,6 @@
 .section-icon {
   & {
+    transition: 1s;
     @apply absolute w-[72px] h-[72px] bg-lightblue rounded-full left-0
     -translate-x-1/2 flex items-center justify-center;
   }

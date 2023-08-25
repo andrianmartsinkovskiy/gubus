@@ -7,7 +7,7 @@ import googleIcon from '../../../assets/images/google-sheets.svg'
 import telegramIcon from '../../../assets/images/telegram.svg'
 import {SectionIcon} from "../../../components/ui/section-icon";
 import useOnScreen from "../../../hooks/on-screen.hook";
-import {Animated} from "react-animated-css";
+import {AnimLeft} from "../../../components/anim-left";
 
 const LIST_DATA = [
   {
@@ -50,45 +50,41 @@ const HomeAdvantages = () => {
 
   return (
     <div className="home-advantages_section">
-      <div  ref={ref}  className="home-advantages_wrap">
+      <div   className="home-advantages_wrap">
         <div className="home-advantages_container block">
-          <SectionIcon isWhite={true}>
+          <SectionIcon isInView={isInView} isWhite={true}>
             <img src={imgIcon} alt=""/>
           </SectionIcon>
-          <div className="home-advantages_line line">
+          <div className="home-advantages_line line" style={{maxHeight: isInView ? '2000px' : 0}}>
             <img src={imgIcon} alt=""/>
           </div>
-          <Animated animationIn="zoomInRight" animationOut="fadeInRight" animationInDelay={0} isVisible={isInView}>
-            <h2 className="home-advantages_title title">advantages</h2>
-          </Animated>
-          <Animated animationIn="zoomInRight" animationOut="fadeInRight" animationInDelay={300} isVisible={isInView}>
-            <p className="home-advantages_subtitle">
-              Extremely functional, highly secured by Google protocols, on what GUBUS has built User Front and Admin panel.
-              For your unbelievable functionality, the most complex challenges and smooth everyday working
-            </p>
-          </Animated>
+          <h2 ref={ref} className="home-advantages_title title">advantages</h2>
+          <p className="home-advantages_subtitle">
+            Extremely functional, highly secured by Google protocols, on what GUBUS has built User Front and Admin panel.
+            For your unbelievable functionality, the most complex challenges and smooth everyday working
+          </p>
 
           <div className="home-advantages_list">
             {
               LIST_DATA.map((item, i) => (
-                <Animated key={Math.random()} className="home-advantages_item-wrap" animationIn="fadeInUp" animationOut="fadeOut" animationInDelay={i * 400 + 500} isVisible={isInView}>
-                  <div className={`home-advantages_item ${item.isWhite && "home-advantages_item-white"}`}>
-                    <div className="home-advantages_item_top">
-                      <div>
-                        <div className='home-advantages_item_icon'>
-                          <img src={item.icon} alt=""/>
+                  <AnimLeft isInView={isInView} key={i} left={50} delay={i * 200}>
+                    <div key={i} className={`home-advantages_item ${item.isWhite && "home-advantages_item-white"}`}>
+                      <div className="home-advantages_item_top">
+                        <div>
+                          <div className='home-advantages_item_icon'>
+                            <img src={item.icon} alt=""/>
+                          </div>
+                        </div>
+                        <div>
+                          <h2>{item.title}</h2>
                         </div>
                       </div>
-                      <div>
-                        <h2>{item.title}</h2>
-                      </div>
-                    </div>
 
-                    <p className="home-advantages_item_text">
-                      {item.text}
-                    </p>
-                  </div>
-                </Animated>
+                      <p className="home-advantages_item_text">
+                        {item.text}
+                      </p>
+                    </div>
+                  </AnimLeft>
               ))
             }
           </div>

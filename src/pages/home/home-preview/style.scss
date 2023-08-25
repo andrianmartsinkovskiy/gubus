@@ -3,7 +3,7 @@
     height: 100vh;
     width: 100vw;
     overflow: hidden;
-    @apply rounded-b-[60px] bg-darkblue;
+    background: black;
   }
 
   &_container {
@@ -25,8 +25,11 @@
   }
 
   &_content {
+    color: white;
+
     &_title {
-      @apply font-benzin text-white text-7xl uppercase;
+
+      @apply font-benzina text-7xl uppercase;
     }
 
     &_subtitle {
@@ -40,3 +43,6 @@
     @apply max-w-screen-lg mx-auto pt-[140px] text-center;
   }
 }
+
+
+
