@@ -4,6 +4,7 @@
     width: 100vw;
     overflow: hidden;
     background: black;
+    min-height: 600px;
   }
 
   &_container {
@@ -29,7 +30,7 @@
 
     &_title {
 
-      @apply font-benzina text-7xl uppercase;
+      @apply font-benzina text-7xl uppercase font-bold;
     }
 
     &_subtitle {
@@ -37,12 +38,22 @@
     }
 
     &_action {
-      @apply flex justify-center;
+      position: relative;
+      z-index: 10;
+      @apply flex justify-center ;
     }
 
     @apply max-w-screen-lg mx-auto pt-[140px] text-center;
   }
 }
 
+
+@media screen and (max-width: 1100px) {
+  .home-preview {
+    & {
+      min-height: 550px;
+    }
+  }
+}
 
 

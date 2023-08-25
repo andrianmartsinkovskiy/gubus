@@ -32,7 +32,7 @@
   }
 
   &_title {
-    @apply text-6xl font-benzin;
+    @apply text-6xl font-benzin font-bold;
   }
 
   &_subtitle {
@@ -41,7 +41,7 @@
 
   &_section {
     position: relative;
-    z-index: 10;
+    z-index: 41;
   }
 
   &_bar {
@@ -83,6 +83,7 @@
     &_list {
       display: grid;
       row-gap: 16px;
+      position: relative;
 
       @apply mt-[32px] grid;
     }
@@ -91,7 +92,7 @@
       & {
         @apply w-full bg-lightblue text-white flex justify-center uppercase
         py-[12px] px-[27px] rounded-[8px] mx-auto mt-[40px] font-benzin text-sm
-        gap-x-[10px] items-center;
+        gap-x-[10px] items-center font-bold;
       }
 
       & svg {
@@ -145,6 +146,10 @@
     &_list {
       grid-template-columns: 1fr;
       row-gap: 30px;
+    }
+
+    &_bar {
+      @apply text-center;
     }
   }
 }

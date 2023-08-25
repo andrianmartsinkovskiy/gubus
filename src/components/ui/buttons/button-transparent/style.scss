@@ -2,7 +2,7 @@
   & {
     transition: 0.3s;
     @apply border-2 border-lightblue font-benzin w-fit text-lightblue
-    uppercase px-[20px] py-[12px] rounded-[8px] text-sm flex gap-x-[8px] items-center;
+    uppercase px-[20px] py-[12px] rounded-[8px] text-sm flex gap-x-[8px] items-center font-bold;
   }
 
   &_icon {

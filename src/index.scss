@@ -1,15 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap');
-
-@font-face {
-  font-family: 'AlQalamKhateSunbali';
-  src: local('AlQalamKhateSunbali'), url('./assets/fonts/qi/AlQalamKhateSunbali.woff') format('woff');
-}
-
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&display=swap');
 
 
 .blue {
@@ -26,7 +18,7 @@ body {
 }
 
 body::-webkit-scrollbar{
-  display: none;
+  display: none !important;
 }
 
 .line {

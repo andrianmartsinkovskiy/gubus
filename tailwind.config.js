@@ -24,7 +24,7 @@ module.exports = {
       'xl': ['24px'],
       '2xl': ['32px'],
       '6xl': ['36px'],
-      '7xl': ['44px'],
+      '7xl': ['46px'],
     },
     colors: {
       lightblue: "#128CFD",
@@ -45,8 +45,8 @@ module.exports = {
     extend: {},
     fontFamily: {
       averta: ['Averta Demo PE Regular', 'sans-serif'],
-      benzin: ['Averta Demo PE Regular', 'sans-serif'],
-      benzina: ['Averta Demo PE Regular', 'sans-serif'],
+      benzin: ['Arimo', 'cursive'],
+      benzina: ['Arimo', 'cursive'],
 
     }
   },

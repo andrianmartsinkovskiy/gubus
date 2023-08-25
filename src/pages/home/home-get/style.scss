@@ -20,7 +20,7 @@
     transition-delay: 0.4s !important;
     transition: 1s;
     max-width: 1059px;
-    @apply mx-auto text-white text-6xl font-benzin uppercase;
+    @apply mx-auto text-white text-6xl font-benzin uppercase font-bold;
   }
 
   &_btn {

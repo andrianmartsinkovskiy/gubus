@@ -9,14 +9,14 @@ export default function useOnScreen(ref) {
       if (entry.isIntersecting) observer.disconnect()
       setIntersecting(entry.isIntersecting)
     }
-  ), [ref])
+  ), [])
 
 
   useEffect(() => {
     if(!ref.current) return
     observer.observe(ref.current)
     return () => observer.disconnect()
-  }, [])
+  }, [observer, ref])
 
   return isIntersecting
 }
