@@ -4,7 +4,7 @@
     width: 100vw;
     overflow: hidden;
     background: black;
-    min-height: 600px;
+    min-height: 700px;
   }
 
   &_container {
@@ -48,12 +48,5 @@
 }
 
 
-@media screen and (max-width: 1100px) {
-  .home-preview {
-    & {
-      min-height: 550px;
-    }
-  }
-}
 
 
