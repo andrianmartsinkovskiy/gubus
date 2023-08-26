@@ -31,6 +31,7 @@ const HomeEventSecond = ({isLast, item, index}) => {
 
         <div className="home-event-second_table">
           <div className="home-event-second_poster">
+            <img src={activeLabel.poster} alt=""/>
           </div>
 
           <div className="home-event-second_content">
