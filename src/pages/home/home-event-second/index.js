@@ -31,7 +31,6 @@ const HomeEventSecond = ({isLast, item, index}) => {
 
         <div className="home-event-second_table">
           <div className="home-event-second_poster">
-            <img src={activeLabel.poster} alt=""/>
           </div>
 
           <div className="home-event-second_content">
@@ -45,7 +44,7 @@ const HomeEventSecond = ({isLast, item, index}) => {
                     className={`home-event-second_list_item ${label.id === activeLabel.id && 'home-event-second_list_item-active'}`}
                     onClick={() => setActiveLabel(label)}>
                     <div className="home-event-second_list_item-icon">
-                      <img src={label.icon} alt=""/>
+                      {label.icon}
                     </div>
                     <div className="home-event-second_list_item-text">
                       {

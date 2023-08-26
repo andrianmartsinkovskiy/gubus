@@ -3,24 +3,26 @@ import {HomeEventFirst} from "../home-event-first";
 import {HomeEventSecond} from "../home-event-second";
 import poster1 from '../../../assets/images/poster-event-left.png'
 import poster2 from '../../../assets/images/event-poster.svg'
-import icon1 from '../../../assets/images/screen-icon.svg'
-import icon2 from '../../../assets/images/keyboard-open.svg'
-import icon3 from '../../../assets/images/data.svg'
-import icon4 from '../../../assets/images/crop.svg'
-import icon5 from '../../../assets/images/diagram.svg'
-import icon6 from '../../../assets/images/receipt-2.svg'
-import icon7 from '../../../assets/images/cloud-add.svg'
-import icon8 from '../../../assets/images/slider-vertical.svg'
-import icon9 from '../../../assets/images/flash.svg'
-import icon10 from '../../../assets/images/location.svg'
-import icon11 from '../../../assets/images/refresh-2.svg'
-import icon12 from '../../../assets/images/messages-2.svg'
-import icon13 from '../../../assets/images/candle.svg'
-import icon14 from '../../../assets/images/grid-8.svg'
-import icon15 from '../../../assets/images/maximize.svg'
-import icon16 from '../../../assets/images/3dcube.svg'
-import icon17 from '../../../assets/images/flag-2.svg'
-import icon18 from '../../../assets/images/receipt.svg'
+import {ReactComponent as Icon1} from '../../../assets/images/screen-icon.svg'
+import {ReactComponent as Icon2} from '../../../assets/images/keyboard-open.svg'
+import {ReactComponent as Icon3} from '../../../assets/images/data.svg'
+import {ReactComponent as Icon4} from '../../../assets/images/crop.svg'
+import {ReactComponent as Icon5} from '../../../assets/images/diagram.svg'
+import {ReactComponent as Icon6} from '../../../assets/images/receipt-2.svg'
+import {ReactComponent as Icon7} from '../../../assets/images/cloud-add.svg'
+import {ReactComponent as Icon8} from '../../../assets/images/slider-vertical.svg'
+import {ReactComponent as Icon9} from '../../../assets/images/flash.svg'
+import {ReactComponent as Icon10} from '../../../assets/images/location.svg'
+import {ReactComponent as Icon11} from '../../../assets/images/refresh-2.svg'
+import {ReactComponent as Icon12} from '../../../assets/images/messages-2.svg'
+import {ReactComponent as Icon13} from '../../../assets/images/candle.svg'
+import {ReactComponent as Icon14} from '../../../assets/images/grid-8.svg'
+import {ReactComponent as Icon15} from '../../../assets/images/maximize.svg'
+import {ReactComponent as Icon16} from '../../../assets/images/3dcube.svg'
+import {ReactComponent as Icon17} from '../../../assets/images/flag-2.svg'
+import {ReactComponent as Icon18} from '../../../assets/images/receipt.svg'
+
+
 
 const EVENTS_DATA = [
   {
@@ -33,19 +35,19 @@ const EVENTS_DATA = [
       {
         id: 1,
         poster: poster2,
-        icon: icon1,
+        icon: <Icon1 />,
         text: "Adaptive event driven built-in stages resolution logic in a box"
       },
       {
         id: 2,
         poster: poster2,
-        icon: icon2,
+        icon: <Icon2 />,
         text: "Build custom stages with laconic admin configuration"
       },
       {
         id: 3,
         poster: poster2,
-        icon: icon3,
+        icon: <Icon3 />,
         text: "Easily modify products workflows with statuses"
       }
     ]
@@ -60,19 +62,19 @@ const EVENTS_DATA = [
       {
         id: 1,
         poster: poster1,
-        icon: icon4,
+        icon: <Icon4 />,
         text: "Control your product transformation on each stage"
       },
       {
         id: 2,
         poster: poster1,
-        icon: icon5,
+        icon: <Icon5 />,
         text: "Automated stage moving forward with single workers click"
       },
       {
         id: 3,
         poster: poster1,
-        icon: icon6,
+        icon: <Icon6 />,
         text: "Gather payment/production/new_entered_info on each step with built-in filterUp functionality"
       }
     ]
@@ -87,19 +89,19 @@ const EVENTS_DATA = [
       {
         id: 1,
         poster: poster2,
-        icon: icon7,
+        icon: <Icon7 />,
         text: "Extremely smooth navigation with arrows on a data"
       },
       {
         id: 2,
         poster: poster2,
-        icon: icon8,
+        icon: <Icon8 />,
         text: "Intuitive navigation, all data in one place. 3 clicks to find what you need. Immortal Ctrl+F."
       },
       {
         id: 3,
         poster: poster2,
-        icon: icon9,
+        icon: <Icon9 />,
         text: "Limited modifications, more freedom, flexibility, and power."
       }
     ]
@@ -114,19 +116,19 @@ const EVENTS_DATA = [
       {
         id: 1,
         poster: poster1,
-        icon: icon10,
+        icon: <Icon10 />,
         text: "GUBUS maps anything on the screen instantly."
       },
       {
         id: 2,
         poster: poster1,
-        icon: icon11,
+        icon: <Icon11 />,
         text: "Simplify accounting with semi-automated input for complex products."
       },
       {
         id: 3,
         poster: poster1,
-        icon: icon12,
+        icon: <Icon12 />,
         text: "Real-time support: instant prices, discounts, order changes."
       }
     ]
@@ -141,19 +143,19 @@ const EVENTS_DATA = [
       {
         id: 1,
         poster: poster2,
-        icon: icon13,
+        icon: <Icon13 />,
         text: "Manage salaries and other  transactions in a few (really!) clicks!"
       },
       {
         id: 2,
         poster: poster2,
-        icon: icon14,
+        icon: <Icon14 />,
         text: "Improve advanced business logic with GoogleSheets Formulas"
       },
       {
         id: 3,
         poster: poster2,
-        icon: icon15,
+        icon: <Icon15 />,
         text: "Enter and transform even most complex supplies with only filling one column"
       }
     ]
@@ -168,19 +170,19 @@ const EVENTS_DATA = [
       {
         id: 1,
         poster: poster1,
-        icon: icon16,
+        icon: <Icon16 />,
         text: "The main place of a whole system. Don’t look at its simplicity."
       },
       {
         id: 2,
         poster: poster1,
-        icon: icon17,
+        icon: <Icon17 />,
         text: "Easily manage orders from it, start, pause and correct them"
       },
       {
         id: 3,
         poster: poster1,
-        icon: icon18,
+        icon: <Icon18 />,
         text: "Easily manage cash flow with it with built-in GUBUS transactions module"
       }
     ]
@@ -191,6 +193,7 @@ const HomeEventList = () => {
 
   return (
     <div>
+      <Icon1 />
       {
         EVENTS_DATA.map((item, index) => (
           <React.Fragment key={index}>

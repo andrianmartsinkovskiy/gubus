@@ -45,7 +45,7 @@ const HomeEventFirst = ({item, index}) => {
                     key={Math.random()}
                   >
                     <div className="home-event_list_item-icon">
-                      <img src={label.icon} alt=""/>
+                      {label.icon}
                     </div>
                     <div>
                       {label.text}

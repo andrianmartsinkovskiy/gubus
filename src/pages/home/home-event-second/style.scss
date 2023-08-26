@@ -57,6 +57,8 @@
     &_label {
       @apply mb-[32px] px-[16px] py-[6px] rounded-[32px] bg-lightblue w-fit text-lg font-averta text-white;
     }
+
+
   }
 
   &_list {
@@ -70,13 +72,26 @@
       @apply p-[12px] rounded-[8px] font-averta text-sm cursor-pointer;
     }
 
-    &_item-active {
-      @apply bg-white;
+    &_item-icon {
+      & {
+        @apply flex justify-center items-center;
+      }
+
+      & path {
+        @apply stroke-grey;
+      }
     }
 
-    &_item-icon {
-      @apply flex justify-center items-center;
+    &_item-active {
+      & {
+        @apply bg-white;
+      }
+
+      & path {
+        @apply stroke-lightblue;
+      }
     }
+
 
     &_item-text {
       word-wrap: break-word;
