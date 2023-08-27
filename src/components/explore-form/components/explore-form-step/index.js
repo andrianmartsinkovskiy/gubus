@@ -20,7 +20,7 @@ const ExploreFormStep = ({children, next, form, setForm, activeStep}) => {
       <div className="explore-form-step_right">
         <textarea
           placeholder="// Feedback on choice"
-          name="area" id="area"
+          name="area"
           className='explore-form-step_area'
           value={activeStep.note}
           onChange={e => onTextAreaChange(e.target.value)}

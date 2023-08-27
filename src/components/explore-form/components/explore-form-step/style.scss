@@ -10,10 +10,11 @@
   &_left {
     overflow-y: scroll;
     padding-right: 40px;
+    scrollbar-width: none;
   }
 
   &_left::-webkit-scrollbar-thumb {
-    opacity: 0;
+    display: none !important;
   }
 
   &_submit {
